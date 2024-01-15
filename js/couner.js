@@ -1,16 +1,4 @@
-// const minus = document.querySelectorAll('[data-action="minus"]')
-// const plus = document.querySelectorAll('[data-action="plus"]')
-// const counter = document.querySelectorAll('[data-counter]')
-// console.log(plus)
-// minus.addEventListener('click', function () {
-//     if(+counter.innerHTML > 1){
-//         counter.innerHTML = --counter.innerHTML
-//     }
-// })
 
-// plus.addEventListener('click', function () {
-//     counter.innerHTML = ++counter.innerHTML
-// })
 
 window.addEventListener('click', (e) => {
     let counter
@@ -24,8 +12,14 @@ if(action === 'plus' || action === 'minus'){
   if (action === 'plus') {
     counter.innerHTML = ++counter.innerHTML;
   }
+  
   // проверяем является ли элемент по которуму был совершён клик кнопкой Минус
   if (action === 'minus' && +counter.innerHTML > 1) {
     counter.innerHTML = --counter.innerHTML;
-  }
+    // проверка на товар который находится в корзине
+
+  }else if (e.target.closest('.cart1') && parseInt(counter.innerHTML) === 1) {
+    e.target.closest('.cart1').remove()
+    toggleCartStatus()
+        }
 });

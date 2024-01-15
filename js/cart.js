@@ -1,9 +1,10 @@
  const cartWrapper = document.querySelector('.cart1-wrapper')
 
-window.addEventListener('click', (e) => {
-    const card = e.target.closest('.card');
-   let counter1 = card.querySelector('[data-cart]');
-    if(counter1){
+window.addEventListener('click', function (event)  {
+
+    if(event.target.hasAttribute('data-cart')){
+
+        const card = event.target.closest('.card')
         const productInfo = {
             id: card.dataset.id,
             imgSrc: card.querySelector('.card__img').getAttribute('src'),
@@ -12,7 +13,12 @@ window.addEventListener('click', (e) => {
             price: card.querySelector('.card__price').innerText
         }
 
+const itemInCart = cartWrapper.querySelector(`[data-id="${productInfo.id}"]`)
 
+if(itemInCart){
+    const counterEl = itemInCart.querySelector('[data-counter]');
+    counterEl.innerHTML= parseInt(counterEl.innerHTML) + parseInt(productInfo.counter)
+}else{
 
         const cartItemHTML = `<div class="cart1">
         <article data-tab-value="bed" data-id="${productInfo.id}" class="card swiper-slide">
@@ -42,5 +48,8 @@ window.addEventListener('click', (e) => {
 
 
     cartWrapper.insertAdjacentHTML('beforeend', cartItemHTML)
+}
+card.querySelector('[data-counter]').innerText = '1'
+toggleCartStatus()
     }
 })
