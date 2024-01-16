@@ -21,5 +21,9 @@ if(action === 'plus' || action === 'minus'){
   }else if (e.target.closest('.cart1') && parseInt(counter.innerHTML) === 1) {
     e.target.closest('.cart1').remove()
     toggleCartStatus()
+
+        }
+        if (e.target.hasAttribute('data-action') && document.querySelector('.cart1-wrapper') ) {
+          calcCartPrice ()
         }
 });

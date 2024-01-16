@@ -197,18 +197,19 @@
         </div>
       </div>
     </section>
-    <div class="cart1-wrapper">
-<h3>Корзина</h3>
-<div>
-    <p>Корзина пуста</p>
-</div>
-<div>
-    <p>доставка бесплатная</p>
-</div>
-<div>
-    общая сумма $1000
-</div>
-    </div>
+    <section class="cart__body">
+      <h3>Корзина</h3>
+      <div data-cart-empty>
+        <p>Корзина пустая</p>
+      </div>
+      <div>
+        <p>доставка бесплатная</p>
+      </div>
+      <div class="total__price">
+        0
+      </div>
+      <div class="cart1-wrapper"></div>
+    </section>
     <section class="products">
       <div class="container">
         <div class="products__title">
@@ -919,6 +920,7 @@
     <!-- // Mobile nav -->
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script src="./js/calcCartPrice.js"></script>
     <script src="./js/toggleCartStatus.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/couner.js"></script>

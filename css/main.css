@@ -12,7 +12,9 @@
 *::after {
   box-sizing: border-box;
 }
-
+.none{
+  display: none;
+}
 /* Links */
 a, a:link, a:visited {
   text-decoration: none;

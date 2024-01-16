@@ -51,5 +51,6 @@ if(itemInCart){
 }
 card.querySelector('[data-counter]').innerText = '1'
 toggleCartStatus()
+calcCartPrice ()
     }
 })
