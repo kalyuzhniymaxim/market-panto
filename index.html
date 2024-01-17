@@ -202,12 +202,14 @@
       <div data-cart-empty>
         <p>Корзина пустая</p>
       </div>
-      <div>
-        <p>доставка бесплатная</p>
+      <div class="deliveri__cost none">
+        <p>доставка 250 руб</p>
+        <p>бесплтатная доставка при заказе от 600 руб</p>
       </div>
       <div class="total__price">
         0
       </div>
+
       <div class="cart1-wrapper"></div>
     </section>
     <section class="products">
@@ -232,48 +234,12 @@
             <!-- Slider main container -->
             <div class="swiper">
               <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
+              <div class="swiper-wrapper" id="products">
                 <!-- Slides -->
-                <article data-tab-value="chair" data-id="01" class="card swiper-slide">
-                  <!-- <a href="#product-page" class="card__link"></a> -->
-                  <div class="card__photo">
-                    <img
-                      src="./img/products/chair-01.png"
-                      srcset="./img/products/chair-01@2x.png 2x"
-                      alt="Title"
-                      class="card__img"
-                    />
-                  </div>
 
-                  <div class="card__desc">
-                    <a href="#category" class="card__category">Chair</a>
-                    <h3 class="card__title">Sakarias Armchair</h3>
-
-                    <!-- <div class="card__rating">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star-off.svg" alt="">
-                                        </div> -->
-                    <div class="counter">
-                      <div class="counter__minus" data-action="minus">-</div>
-                      <div class="counter__current" data-counter>1</div>
-                      <div class="counter__plus" data-action="plus">+</div>
-                    </div>
-
-                    <div class="card__footer">
-                      <div class="card__price" data-value="$">392</div>
-                      <button data-cart type="button" class="card__btn">
-                        Add to cart
-                        <img data-cart src="./img/icons/plus.svg" alt="Add to cart" />
-                      </button>
-                    </div>
-                  </div>
-                </article>
-
+<!-- 
                 <article data-tab-value="chair" data-id="02" class="card swiper-slide">
-                  <!-- <a href="#product-page" class="card__link"></a> -->
+                
                   <div class="card__photo">
                     <img
                       src="./img/products/chair-02.png"
@@ -287,13 +253,7 @@
                     <a href="#category" class="card__category">Chair</a>
                     <h3 class="card__title">Baltsar Chair</h3>
 
-                    <!-- <div class="card__rating">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star-off.svg" alt="">
-                                        </div> -->
+
                     <div class="counter">
                       <div class="counter__minus" data-action="minus">-</div>
                       <div class="counter__current" data-counter>1</div>
@@ -311,7 +271,7 @@
                 </article>
 
                 <article data-tab-value="bed" data-id="03" class="card swiper-slide">
-                  <!-- <a href="#product-page" class="card__link"></a> -->
+                
                   <div class="card__photo">
                     <img
                       src="./img/products/chair-03.png"
@@ -325,13 +285,6 @@
                     <a href="#category" class="card__category">Bed</a>
                     <h3 class="card__title">Anjay Chair</h3>
 
-                    <!-- <div class="card__rating">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star-off.svg" alt="">
-                                        </div> -->
                     <div class="counter">
                       <div class="counter__minus" data-action="minus">-</div>
                       <div class="counter__current" data-counter>1</div>
@@ -348,7 +301,7 @@
                 </article>
 
                 <article data-tab-value="sofa" data-id="04" class="card swiper-slide">
-                  <!-- <a href="#product-page" class="card__link"></a> -->
+
                   <div class="card__photo">
                     <img
                       src="./img/products/chair-04.png"
@@ -362,13 +315,6 @@
                     <a href="#category" class="card__category">Sofa</a>
                     <h3 class="card__title">Nyantuy Chair</h3>
 
-                    <!-- <div class="card__rating">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star-off.svg" alt="">
-                                        </div> -->
                     <div class="counter">
                       <div class="counter__minus" data-action="minus">-</div>
                       <div class="counter__current" data-counter>1</div>
@@ -386,7 +332,7 @@
                 </article>
 
                 <article data-tab-value="lamp" data-id="05" class="card swiper-slide">
-                  <!-- <a href="#product-page" class="card__link"></a> -->
+
                   <div class="card__photo">
                     <img
                       src="./img/products/chair-01.png"
@@ -400,13 +346,6 @@
                     <a href="#category" class="card__category">Lamp</a>
                     <h3 class="card__title">Sakarias Armchair</h3>
 
-                    <!-- <div class="card__rating">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star-off.svg" alt="">
-                                        </div> -->
                     <div class="counter">
                       <div class="counter__minus" data-action="minus">-</div>
                       <div class="counter__current" data-counter>1</div>
@@ -424,7 +363,7 @@
                 </article>
 
                 <article data-tab-value="bed" data-id="06" class="card swiper-slide">
-                  <!-- <a href="#product-page" class="card__link"></a> -->
+
                   <div class="card__photo">
                     <img
                       src="./img/products/chair-02.png"
@@ -437,14 +376,6 @@
                   <div class="card__desc">
                     <a href="#category" class="card__category">Bed</a>
                     <h3 class="card__title">Baltsar Chair</h3>
-                    <!-- 
-                                        <div class="card__rating">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star-off.svg" alt="">
-                                        </div> -->
                     <div class="counter">
                       <div class="counter__minus" data-action="minus">-</div>
                       <div class="counter__current" data-counter>1</div>
@@ -462,7 +393,6 @@
                 </article>
 
                 <article data-tab-value="sofa" data-id="07" class="card swiper-slide">
-                  <!-- <a href="#product-page" class="card__link"></a> -->
                   <div class="card__photo">
                     <img
                       src="./img/products/chair-03.png"
@@ -476,13 +406,6 @@
                     <a href="#category" class="card__category">Sofa</a>
                     <h3 class="card__title">Anjay Chair</h3>
 
-                    <!-- <div class="card__rating">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star-off.svg" alt="">
-                                        </div> -->
                     <div class="counter">
                       <div class="counter__minus" data-action="minus">-</div>
                       <div class="counter__current" data-counter>1</div>
@@ -500,7 +423,6 @@
                 </article>
 
                 <article data-tab-value="lamp" data-id="08" class="card swiper-slide">
-                  <!-- <a href="#product-page" class="card__link"></a> -->
                   <div class="card__photo">
                     <img
                       src="./img/products/chair-04.png"
@@ -513,14 +435,6 @@
                   <div class="card__desc">
                     <a href="#category" class="card__category">Lamp</a>
                     <h3 class="card__title">Nyantuy Chair</h3>
-
-                    <!-- <div class="card__rating">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star-off.svg" alt="">
-                                        </div> -->
                     <div class="counter">
                       <div class="counter__minus" data-action="minus">-</div>
                       <div class="counter__current" data-counter>1</div>
@@ -538,7 +452,6 @@
                 </article>
 
                 <article data-tab-value="bed" data-id="09" class="card swiper-slide">
-                  <!-- <a href="#product-page" class="card__link"></a> -->
                   <div class="card__photo">
                     <img
                       src="./img/products/chair-04.png"
@@ -551,14 +464,6 @@
                   <div class="card__desc">
                     <a href="#category" class="card__category">Bed</a>
                     <h3 class="card__title">Nyantuy Chair</h3>
-
-                    <!-- <div class="card__rating">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star-off.svg" alt="">
-                                        </div> -->
                     <div class="counter">
                       <div class="counter__minus" data-action="minus">-</div>
                       <div class="counter__current" data-counter>1</div>
@@ -576,7 +481,6 @@
                 </article>
 
                 <article data-tab-value="chair" data-id="10" class="card swiper-slide">
-                  <!-- <a href="#product-page" class="card__link"></a> -->
                   <div class="card__photo">
                     <img
                       src="./img/products/chair-01.png"
@@ -589,14 +493,6 @@
                   <div class="card__desc">
                     <a href="#category" class="card__category">Chair</a>
                     <h3 class="card__title">Sakarias Armchair</h3>
-
-                    <!-- <div class="card__rating">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star-off.svg" alt="">
-                                        </div> -->
                     <div class="counter">
                       <div class="counter__minus" data-action="minus">-</div>
                       <div class="counter__current" data-counter>1</div>
@@ -614,7 +510,6 @@
                 </article>
 
                 <article data-tab-value="chair" data-id="11" class="card swiper-slide">
-                  <!-- <a href="#product-page" class="card__link"></a> -->
                   <div class="card__photo">
                     <img
                       src="./img/products/chair-02.png"
@@ -627,14 +522,6 @@
                   <div class="card__desc">
                     <a href="#category" class="card__category">Chair</a>
                     <h3 class="card__title">Baltsar Chair</h3>
-
-                    <!-- <div class="card__rating">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star-off.svg" alt="">
-                                        </div> -->
                     <div class="counter">
                       <div class="counter__minus" data-action="minus">-</div>
                       <div class="counter__current" data-counter>1</div>
@@ -652,7 +539,6 @@
                 </article>
 
                 <article data-tab-value="bed" data-id="12" class="card swiper-slide">
-                  <!-- <a href="#product-page" class="card__link"></a> -->
                   <div class="card__photo">
                     <img
                       src="./img/products/chair-03.png"
@@ -665,14 +551,6 @@
                   <div class="card__desc">
                     <a href="#category" class="card__category">Bed</a>
                     <h3 class="card__title">Anjay Chair</h3>
-
-                    <!-- <div class="card__rating">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star-off.svg" alt="">
-                                        </div> -->
                     <div class="counter">
                       <div class="counter__minus" data-action="minus">-</div>
                       <div class="counter__current" data-counter>1</div>
@@ -690,7 +568,6 @@
                 </article>
 
                 <article data-tab-value="lamp" data-id="13" class="card swiper-slide">
-                  <!-- <a href="#product-page" class="card__link"></a> -->
                   <div class="card__photo">
                     <img
                       src="./img/products/chair-04.png"
@@ -703,14 +580,6 @@
                   <div class="card__desc">
                     <a href="#category" class="card__category">Lamp</a>
                     <h3 class="card__title">Nyantuy Chair</h3>
-
-                    <!-- <div class="card__rating">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star-off.svg" alt="">
-                                        </div> -->
                     <div class="counter">
                       <div class="counter__minus" data-action="minus">-</div>
                       <div class="counter__current" data-counter>1</div>
@@ -728,7 +597,6 @@
                 </article>
 
                 <article data-tab-value="chair" data-id="14" class="card swiper-slide">
-                  <!-- <a href="#product-page" class="card__link"></a> -->
                   <div class="card__photo">
                     <img
                       src="./img/products/chair-01.png"
@@ -741,14 +609,6 @@
                   <div class="card__desc">
                     <a href="#category" class="card__category">Chair</a>
                     <h3 class="card__title">Sakarias Armchair</h3>
-
-                    <!-- <div class="card__rating">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star-off.svg" alt="">
-                                        </div> -->
                     <div class="counter">
                       <div class="counter__minus" data-action="minus">-</div>
                       <div class="counter__current" data-counter>1</div>
@@ -766,7 +626,6 @@
                 </article>
 
                 <article data-tab-value="chair" data-id="15" class="card swiper-slide">
-                  <!-- <a href="#product-page" class="card__link"></a> -->
                   <div class="card__photo">
                     <img
                       src="./img/products/chair-02.png"
@@ -780,13 +639,6 @@
                     <a href="#category" class="card__category">Chair</a>
                     <h3 class="card__title">Baltsar Chair</h3>
 
-                    <!-- <div class="card__rating">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star.svg" alt="">
-                                            <img src="./img/icons/star-off.svg" alt="">
-                                        </div> -->
                     <div class="counter">
                       <div class="counter__minus" data-action="minus">-</div>
                       <div class="counter__current" data-counter>1</div>
@@ -801,11 +653,11 @@
                       </button>
                     </div>
                   </div>
-                </article>
+                </article> -->
               </div>
             </div>
 
-            <!-- If we need navigation buttons -->
+
             <button id="sliderPrev" class="slider__btn slider__btn--prev">
               <img src="./img/icons/slider/slider-left.svg" alt="Previous" />
             </button>
@@ -919,7 +771,9 @@
     </div>
     <!-- // Mobile nav -->
 
+    
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script src="./js/renderProducts.js"></script>
     <script src="./js/calcCartPrice.js"></script>
     <script src="./js/toggleCartStatus.js"></script>
     <script src="./js/main.js"></script>

@@ -1,0 +1,6 @@
+[
+  { "id": 1, "title": "Стул 1", "price": 200, "imgSrc": "./img/products/chair-01@2x.png" },
+  { "id": 2, "title": "Стул 2", "price": 300, "imgSrc": "./img/products/chair-02@2x.png" },
+  { "id": 3, "title": "Стул 3", "price": 400, "imgSrc": "./img/products/chair-03@2x.png" },
+  { "id": 4, "title": "Стул 4", "price": 500, "imgSrc": "./img/products/chair-04@2x.png" }
+]
